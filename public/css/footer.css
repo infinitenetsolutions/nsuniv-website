@@ -1,0 +1,133 @@
+.custom-social-proof {
+    position: fixed;
+    left: 15px;
+    z-index: 9999999999999 !important;
+    font-family: "Open Sans", sans-serif;
+    animation: achievementTextAnimationFrames 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    padding-top: 3px;
+}
+
+.btn-applyy {
+    background: #0f385f;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    width: 50%;
+    display: block;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.custom-social-proof .custom-notification {
+    border: 0;
+    text-align: left;
+    z-index: 99999;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: 400;
+    border-radius: 6px;
+    box-shadow: 0px 0px 16px 0px rgb(11 10 10 / 28%);
+    background-color: #ffc400;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-social-proof .custom-notification .custom-notification-container {
+    display: flex !important;
+    align-items: center;
+}
+
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-image-wrapper img {
+    max-height: 75px;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 6px 0 0 6px;
+    object-fit: cover;
+}
+
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper {
+    margin: 0;
+    height: 100%;
+    color: gray;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0 6px 6px 0;
+    flex: 1;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content {
+    font-family: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+}
+
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content small {
+    margin-top: 3px !important;
+    display: block !important;
+    font-size: 12px !important;
+    opacity: 0.8;
+}
+
+.custom-social-proof .custom-notification .custom-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: rotate(45deg);
+    opacity: 1;
+    background: #dba921;
+    padding: 5px;
+}
+
+.custom-social-proof .custom-notification .custom-close::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.custom-social-proof .custom-notification .custom-close::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.custom-social-proof .custom-notification:hover .custom-close {
+    opacity: 1;
+}
+
+@keyframes achievementTextAnimationFrames {
+    0% {
+        opacity: 0;
+        position: fixed;
+        bottom: -100px;
+    }
+
+
+    100% {
+        opacity: 1;
+        position: fixed;
+        bottom: 20px;
+    }
+}

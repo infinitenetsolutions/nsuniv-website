@@ -1,0 +1,534 @@
+body {
+    color: #7c8084;
+}
+
+div,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.container1 {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.tablefixed::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: #f5f7fb;
+}
+
+.tablefixed::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: 10px;
+    background: #d6d5d5;
+}
+
+
+.scholarship-wrapper {
+    width: auto;
+    background: linear-gradient(#dff5f1, #ffffff);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+.top-tab {
+    width: auto;
+    border-bottom: 1px #cde4e5 solid
+}
+
+.top-tab ul {
+    width: auto;
+    text-align: center;
+}
+
+.top-tab ul li {
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 10px;
+    font-weight: 600;
+    border-bottom: 3px transparent solid;
+}
+
+.top-tab ul li:hover {
+    color: #194880;
+    border-bottom: 3px #eab716 solid;
+}
+
+.top-tab ul li.active {
+    color: #194880;
+    border-bottom: 3px #eab716 solid;
+}
+
+/*top content*/
+.top-content {
+    width: auto;
+    padding: 50px 0 0 0px;
+}
+
+.top-content .content {
+    width: auto;
+    text-align: center;
+}
+
+.top-content .content h1 {
+    color: #194880;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.top-content .content h2 {
+    color: #eab716;
+    margin: 15px 0px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.top-content .content p {
+    color: #605656;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+}
+
+.top-content .content p a {
+    background: #eab716;
+    color: #000000;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.top-content .bannerarea {
+    width: auto;
+    background: url(../images/student-background.png) center bottom no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 450px;
+    margin: 40px 0px 0px 0px;
+    background-size: 90%;
+}
+
+.top-content .bannerarea .blue-area {
+    background: rgba(2, 46, 105, 0.9);
+    padding: 30px;
+    width: 900px;
+    margin: 0px 0px 50px 0px;
+}
+
+.top-content .bannerarea .blue-area p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.top-content .bannerarea .blue-area p strong {
+    color: #eab716;
+    font-weight: bold;
+}
+
+/*top content*/
+
+
+/*middle content area*/
+.middle-content-area {
+    width: auto;
+    background: #fff;
+    padding: 40px 0px;
+}
+
+
+.middle-content-area .boxcontent {
+    width: auto;
+    margin: 0px;
+    border-left: 1px #00bcd4 dashed;
+}
+
+.middle-content-area .boxcontent .heading {
+    width: auto;
+}
+
+.middle-content-area .boxcontent .heading p {
+    background: #00bcd4;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.middle-content-area .boxcontent .content {
+    width: auto;
+    padding: 20px 0px 20px 30px;
+}
+
+.middle-content-area .boxcontent .content h3 {
+    width: auto;
+    font-size: 20px;
+    color: #1b477b;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+}
+
+.middle-content-area .boxcontent .content h4 {
+    width: auto;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+}
+
+.middle-content-area .boxcontent .content p {
+    width: auto;
+    margin: 0px 0px 15px 0px;
+}
+
+.middle-content-area .boxcontent .content ul {
+    margin: 20px 0px;
+}
+
+    .middle-content-area .boxcontent .content ul li {
+        margin: 10px 0px;
+        position: relative;
+        padding: 0px 0px 0px 20px;
+        color: #191919;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+.middle-content-area .boxcontent .content ul li:before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f07d74;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+.middle-content-area .boxcontent .content .borderbox {
+    border-top: 1px #d6c7c7 dotted;
+    padding: 10px 0px;
+}
+
+.middle-content-area .boxcontent .table-data {
+    width: auto;
+    margin: 30px 0px 10px;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed {
+    width: auto;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed table {
+    width: auto;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed table tr {
+    width: 100%;
+    background: #f9f8f8;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed table tr:first-child {
+    font-weight: bold;
+    background: #f5f5f5;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed table tr:nth-child(2n) {
+    background: #ecf8f9;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed table tr td {
+    border: 1px #e0dddd solid;
+    font-size: 13px;
+    text-align: center;
+    color: #7c8084;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.middle-content-area .boxcontent .table-data .tablefixed table tr td.red {
+    background: #f6ecf0;
+    color: #9c3640;
+    font-weight: 500;
+}
+
+.middle-content-area .boxcontent:last-child .content {
+    padding: 20px 20px 0px
+}
+
+.middle-content-area .boxcontent:last-child .content .borderbox:last-child {
+    margin: 10px 0px 0px 0px
+}
+
+/*middle content area*/
+
+/*note start*/
+.notsection {
+    width: auto;
+    background: #f5f7fb;
+}
+
+.notsection .strip {
+    background: #f6ecf0;
+    padding: 10px 0px;
+}
+
+.notsection .strip p {
+    color: #9c3640;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+}
+
+.notsection .content {
+    padding: 60px 0px;
+    height: 100%;
+}
+
+.notsection .content.shadowimg {
+    background: url(../images/shadow.png) left center no-repeat;
+    padding: 60px 0px 60px 100px;
+}
+
+.notsection .content h3 {
+    width: auto;
+    font-size: 25px;
+    color: #1b477b;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+
+.notsection .content p {
+    width: auto;
+    margin: 0px 0px 15px 0px;
+}
+
+.notsection .content p img {
+    margin: 5px 0px 0px 0px;
+}
+
+/*note close*/
+
+/*women-banner start*/
+.women-banner {
+    background: #dcf6f9;
+    padding: 60px 0px 0px;
+}
+
+.women-banner .container {
+    position: relative;
+}
+
+.women-banner .container .img {
+    position: absolute;
+    right: 70px;
+    bottom: 0px;
+}
+
+.women-banner .container .img img {
+    width: 300px;
+}
+
+.women-banner .content {
+    width: auto;
+    margin: 0px 0px 60px 0px;
+    padding: 0px 0px 0px 60px;
+    position: relative;
+}
+
+.women-banner .content .coma1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.women-banner .content p {
+    color: #605656;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+.women-banner .content p strong {
+    color: #1b477b;
+    display: block;
+}
+
+/*women-banner close*/
+
+/*topers start*/
+.toperwrapper {
+    padding: 70px 0px;
+}
+
+.toperwrapper .box {
+    width: auto;
+}
+
+.toperwrapper .box .img {}
+
+.toperwrapper .box .text {
+    background: #fff;
+    border: 1px #CCC solid;
+    border-top: 0px;
+    padding: 15px;
+}
+
+.toperwrapper .box .text h2 {
+    font-size: 18px;
+}
+
+.toperwrapper .box .text h3 {
+    color: #3a3451;
+    margin: 10px 0px 0px 0px;
+}
+
+.toperwrapper .box .text h4 {
+    color: #f07d74;
+    margin: 8px 0px 5px 0px;
+}
+
+.toperwrapper .box .text p {
+    font-size: 16px;
+}
+
+.h3-ss {
+    width: auto;
+    font-size: 20px !important;
+    color: #1b477b !important;
+    font-weight: 500 !important;
+    margin: 20px 0px 10px 0px;
+}
+
+.content ul li {
+    margin: 10px 0px;
+    position: relative;
+    padding: 0px 0px 0px 20px;
+    color: #191919;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+    .content ul li:before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #f07d74;
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 8px;
+    }
+/*topers close*/
+
+
+@media only screen and (max-width: 600px) {
+    .scholarship-scheme-sec3 ul li a, .scholarship-scheme-sec3 ul li span {
+        display: table;
+        height: 55px;
+        position: relative;
+        font-size: 15px !important;
+        background-color: #cf6e5e;
+        color: #fff;
+        padding: 14px 50px;
+    }
+    .fast-track {
+        color: #194880;
+        text-shadow: 5px 2px 0px #ddd;
+        padding-top: 35px;
+    }
+
+
+    .middle-content-area {
+        width: auto;
+        background: #fff;
+        padding: 0px;
+    }
+
+    .middle-content-area .boxcontent .content {
+        width: auto;
+        padding: 20px 0px 0px 8px;
+    }
+
+    .table td,
+    .table th {
+        padding: 5px;
+        vertical-align: top;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .table-bordered {
+        font-size: 10px;
+    }
+
+    .middle-content-area .boxcontent .table-data .tablefixed table {
+        overflow-x: auto;
+        width: 100%;
+        display: block;
+    }
+
+    .top-content .content h1 {
+        color: #194880;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .top-content .content h2 {
+        color: #eab716;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 14px !important;
+    }
+
+    .top-content .bannerarea .blue-area p {
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+
+    .top-content .bannerarea {
+        height: auto;
+    }
+}
