@@ -41,15 +41,11 @@
                 ->get(); ?>
             @foreach ($sliders as $slider)
                 <a id="homebanner1_RepBannerImg_ctl03_anch">
-                    <div id="homebanner1_RepBannerImg_ctl03_divtop" class="item"
-                        style="background-image: url({{ $url . 'slider/' . $slider->image_name }})">
+                    <div id="homebanner1_RepBannerImg_ctl03_divtop" class="item" style="background-image: url({{ $url . 'slider/' . $slider->image_name }})">
                         <div class="carousel-caption">
                             <div class="container">
                                 <div class="carousel-content row align-items-end">
-                                    <div class="col">                                        
-                                            <h2 class="glow text-warning mb-5 pl-3 bor"
-                                            onclick="window.location.replace('{{ route('conference') }}');"><b
-                                                class="tt">INTERNATIONAL CONFERENCE</b></h2>
+                                    <div class="col">
                                         <h2>{{ $slider->title }}</h2>
                                         <p>{{ $slider->description }}</p>
                                     </div>

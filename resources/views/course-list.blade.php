@@ -79,7 +79,7 @@
                                                             <td>{{ $course->duration }} years</td>
                                                             <td>{{ ((int) $course->duration) * 2 }} semesters</td>
                                                             <td> <i class="fas fa-rupee-sign    "></i>
-                                                                {{ $course->fee }}</td>
+                                                                {{ $course->fee }}/ semester</td>
                                                             @if ($course->type == 'ug')
                                                                 <td>Under Graduate</td>
                                                             @else

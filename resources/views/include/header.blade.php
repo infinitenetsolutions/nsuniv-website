@@ -121,6 +121,7 @@ a.red {
                 </div>
             </div>
         </li>
+        <li class="career_btn"><a href="{{ route('iqac') }}">IQAC</a></li>
         <li class="career_btn"><a href="{{ route('rti') }}">RTI</a></li>
         <li class="career_btn"><a href="{{ route('career') }}">Careers</a></li>
         <li class="career_btn"><a href="{{ route('upgrade') }}">Upgrad Campus</a></li>
@@ -382,9 +383,9 @@ a.red {
                                                     </div>
                                                     <div class="col-6">
                                                         <p class="pt-4">
-                                                            <strong> <i class="fa fa-certificate"
+                                                            {{-- <strong> <i class="fa fa-certificate"
                                                                     aria-hidden="true"></i>
-                                                                Certificate Courses</strong>
+                                                                Certificate Courses</strong> --}}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -414,12 +415,12 @@ a.red {
                                                                     href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
                                                             </li>
                                                         @endforeach
-                                                        <li><i class="fas fa-certificate"></i> <a
+                                                        {{-- <li><i class="fas fa-certificate"></i> <a
                                                                 href="{{ route('course.certificate.cma') }}">{{ 'BBA & B.Com with US CMA ' }}</a>
                                                         </li>
                                                         <li><i class="fas fa-certificate"></i> <a
                                                                 href="{{ route('upgrade') }}">{{ 'Upgrad Campus' }}</a>
-                                                        </li>
+                                                        </li> --}}
                                                     </ul>
                                                 </div>
                                             </div>

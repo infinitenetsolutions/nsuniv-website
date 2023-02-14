@@ -223,7 +223,18 @@
 
         </ul>
     </li>
-    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+   	<li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+	<li class="nav-item"><a class="nav-link" href="{{ route('rti') }}">RTI</a></li>
+	<li class="nav-item"><a class="nav-link" href="{{ route('upgrade') }}">Upgrad Campus</a></li>
+	<li class="nav-item"><a class="nav-link" href="{{ route('news1')  }}">News</a></li>
+
+	 <?php $lastnotice = DB::table('noticeboard')
+            ->where('is_deleted', '1')
+            ->orderBy('id', 'desc')
+            ->first(); ?>
+    <li><a class="ml-3 glow text-warning "
+        href="{{ route('noticeboard', $lastnotice->id) }}">{{ $lastnotice->title }} Important Notice</a>
+    </li>
     <ul class="address">
         <li class="nav-item"><a class="nav-link apply_btn mb-2" href="https://nsucms.in/prospectus/public/">Apply
                 Online</a>

@@ -19,6 +19,7 @@ use App\Http\Controllers\PlacementController;
 use App\Http\Controllers\StructureController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\RTIController;
+use App\Http\Controllers\IQACController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\UpgradeCampusController;
 
@@ -85,4 +86,5 @@ Route::post('testimonial/store', [TestimonialController::class, 'store'])->name(
 // });
 Route::get('conference', [ConferenceController::class, 'index'])->name('conference');
 Route::get('rti', [RTIController::class, 'index'])->name('rti');
+Route::get('iqac',[IQACController::class,'index'])->name('iqac');
 // Route::get('xplore', [XploreController::class, 'index'])->name('xplore');

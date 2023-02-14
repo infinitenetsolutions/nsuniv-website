@@ -13,7 +13,7 @@
                     <div class="top-menu-sec">
                         <ul>
                             <h4>About</h4>
-                            <li><a href="{{ route('index') }}">Home.</a></li>
+                            <li><a href="{{ route('index') }}">Home</a></li>
                             <li><a href="{{ route('govbody') }}">Government body</a></li>
                             @foreach ($quicks as $quick)
                                 <li class="{{ Request::path() == 'about/' . $quick->title ? 'active' : '' }}"><a
@@ -183,3 +183,4 @@
         </section>
     @endslot
 </x-layout1>
+
