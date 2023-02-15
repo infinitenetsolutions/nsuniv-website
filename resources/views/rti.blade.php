@@ -11,9 +11,7 @@
                 </div>
                 <div class="container">
                     <div class="top-menu-sec">
-                        <ul>
-                            <h4>Right to Information Act</h4>
-                        </ul>
+                        <ul><h4>Right to Information Act</h4></ul>
                     </div>
                     <div class="p-2 ">
                         {{-- <h2>{{ $data->sub_title }}</h2> --}}
