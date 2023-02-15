@@ -1,8 +1,6 @@
 <div class="subscribe"><span><a data-toggle="modal" data-target="#subscribe" href="javascript:void(0);"> <img
                 src="{{ asset('images/subscribe.jpg') }}" class="img-fluid"> </a> </span></div>
 <div class="subscribe_pop5">
-
-
     <div class="modal fade" id="subscribe" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content bg-warning">
