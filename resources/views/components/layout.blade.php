@@ -92,18 +92,18 @@
 
     <!-- Bootstrap core JavaScript -->
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('vendor/popper/popper.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/jquery.bootstrap-responsive-tabs.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{ asset('js/jquery.bootstrap-responsive-tabs.min.js')}}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
-    <script src="js/jquery.slimscroll.min.js"></script>
-    <script src="js/home-index.js"></script>
+    <script src="{{ asset('js/wow.js')}}"></script>
+    <script src="{{ asset('js/jquery.colorbox-min.js')}}"></script>
+    <script src="{{ asset('js/jquery.slimscroll.min.js')}}"></script>
+    <script src="{{ asset('js/home-index.js')}}"></script>
 
 
     <script>
