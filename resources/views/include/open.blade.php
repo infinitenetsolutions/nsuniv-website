@@ -3,7 +3,7 @@
         <div class="custom-notification-container">
             <div class="custom-notification-content-wrapper">
                 <a data-toggle="modal" data-target=".bs-example-modal-lg">
-                    <img onclick="myFunction()" src="images/mdt-logo.jpg" />
+                    <img onclick="myFunction()" src="{{asset('images/mdt-logo.jpg')}}" />
                 </a>
             </div>
         </div>
