@@ -27,12 +27,17 @@
                             <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                             <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
                         </a>
+                        @if (strpos($data->sub_title, 'national-service-scheme') == 0)
+                            <a href="{{asset('upload/NSS detail.pdf')}}" target="_blank" class="btn btn-small btn-danger">NSS Details</a>
+                        @endif
                     </div>
                 </div>
             </div>
+
             @if (strpos($data->sub_title, 'Message') == 0)
                 <div class="row ml-3 mr-3 ">
                     <div class="col-sm-9 ">
+                        
                         <div class="mt-3 mb-3">
                             @if ($data->header_image != '')
                                 <img src="{{ $url . 'about/' . $data->header_image }}" class="img-fluid">
