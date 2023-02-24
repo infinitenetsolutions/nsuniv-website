@@ -13,7 +13,7 @@
             <div class="modal-body ">
                 <div class="row">
                     <div class="col-md-7 nsu_getstarted">
-                        <img src="{{ asset('images/nsu/nsu_getstarted.jpeg') }}" alt="netaji subhas university admission enquiry"
+                        <img src="{{ asset('images/nsu/nsu_admission.jpeg') }}" alt="netaji subhas university admission enquiry"
                             class="img-fuild">
                     </div>
                     <div class="col-md-5">
