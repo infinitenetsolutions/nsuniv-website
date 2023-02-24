@@ -191,7 +191,7 @@
                         <div class="col-md-3 ">
                             <div class="team-members maxwidth400 mb-30">
                                 <div class="team-thumb">
-                                    <img height="140px" src="{{ $url . 'teacher/' . $university_head->image_name }}"
+                                    <img style="height:200px!important" src="{{ $url . 'teacher/' . $university_head->image_name }}"
                                         alt="" class="img-fluid teachers">
                                 </div>
                                 <div class="team-bottom-part bg-silver-deep  p-2 bg-white">
