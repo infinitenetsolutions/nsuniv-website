@@ -208,7 +208,7 @@
                             <li><i class="fas fa-map-marked mr-2 color-orange"></i> Pokhari,Near Bhilai
                                 Pahadi,Jamshedpur,Jharkhand</li>
                             {{-- <li><i class="fas fa-phone-office color-orange"></i> 0657-223-3022</li> --}}
-                            <li><i class="fas fa-mobile-alt color-orange"></i>1800-889-9022</li>
+                            <li><i class="fas fa-mobile-alt color-orange"></i> 1800-889-9022</li>
 
                             <li><i class="fas fa-envelope mr-2 color-orange"></i> info@nsuniv.ac.in</li>
                             <li><i class="fas fa-globe mr-2 color-orange"></i> nsuniv.ac.in</li>
