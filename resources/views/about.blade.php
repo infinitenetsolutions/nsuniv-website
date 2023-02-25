@@ -27,7 +27,8 @@
                             <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                             <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
                         </a>
-                        @if (strpos($data->sub_title, 'national-service-scheme') == 0)
+                        {{-- @dd(Request::path()); --}}
+                        @if (Request::path() == 'about/national-service-scheme')
                             <a href="{{asset('upload/NSS detail.pdf')}}" target="_blank" class="btn btn-small btn-danger">NSS Details</a>
                         @endif
                     </div>
