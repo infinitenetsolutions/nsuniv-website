@@ -42,7 +42,7 @@ a.red {
 <div class="top_menubar">
     <ul class="container">
         
-        <li class="career_btn"><a href="{{asset('upload/nsu new brouchure.pdf')}}">NSU Brouchure</a></li>
+        <li class="career_btn"><a href="{{asset('upload/nsu new brouchure.pdf')}}">NSU Brochure</a></li>
         <li class="admission_links "><a class="font-weight-bold " href="javascript:void(0);">Admissions <span
                     class="lnr lnr-chevron-down"></span></a>
             <div class="top_megamenu admission_box bg-warning1">
