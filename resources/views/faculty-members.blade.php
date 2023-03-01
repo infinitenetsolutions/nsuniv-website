@@ -58,7 +58,7 @@
                         @elseif($data[0]->type == 'hod')
                             <h2>Head Of Department</h2>
                         @else
-                            <h2> {{ $data[0]->type }}</h2>
+                            <h2 class="text-capitalize"> {{ $data[0]->type }}</h2>
                         @endif
                         <a class="row p-2" href="{{ route('index') }}">
                             <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
