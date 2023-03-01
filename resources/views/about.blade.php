@@ -28,7 +28,10 @@
                             <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
                         </a>
                         {{-- @dd(Request::path()); --}}
-                        @if (Request::path() == 'about/national-service-scheme')
+                        @if(Request::path() == 'about/who-we-are')
+                        <a href="{{asset('upload/organizational structure.pdf')}}" target="_blank" class="text-center btn btn-small btn-warning">Organizational Chart NSU</a>
+                        @endif
+                        @if(Request::path() == 'about/national-service-scheme')
                             <a href="{{asset('upload/NSS detail.pdf')}}" target="_blank" class="btn btn-small btn-danger">NSS Details</a>
                         @endif
                     </div>
