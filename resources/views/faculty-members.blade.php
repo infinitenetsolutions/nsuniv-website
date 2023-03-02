@@ -74,8 +74,7 @@
                         <div class="col-4">
                             {{-- Depatment filter start --}}
                             @if ($data[0]->type != 'hou')
-                                <select onchange="department(this.value, '{{ $data[0]->type }}')"
-                                    class="form-control form-control-sm">
+                                <select onchange="department(this.value, '{{ $data[0]->type }}')" class="form-control form-control-sm">
                                     @if (isset($dept))
                                         <option selected value="{{ $dept }}">{{ $dept }}</option>
                                     @else
@@ -89,40 +88,45 @@
                             {{-- department filter end --}}
                         </div>
                     </div>
-
+                    @if(Route::currentRouteName()!="faculty.department")                        
                     <div class="row mtli-row-clearfix">
-                        @foreach ($data as $faculty)
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-2">
-                                    <div class="team-thumb">
-                                        <a href="{{ route('faculty-details', $faculty->id) }}">
-                                            <img height="300px" class="img-fullwidth" alt="" style="border-radius:50%!important"
-                                                src="{{ $url . 'teacher/' . $faculty->image_name }}">
-                                        </a>
-                                        <div class="team-overlay"></div>
-                                        <?php $social_media = DB::table('social')
-                                            ->where('teacher_id', $faculty->id)
-                                            ->get(); ?>
-                                        <ul class="styled-icons theme-icon team-social icon-sm ml-5">
-                                            @foreach ($social_media as $social)
-                                                <li class="pt-4"><a target="_blank" href="{{ $social->link }}"><i
-                                                            class="fab fa-{{ $social->social }}"></i></a></li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                    <div class="team-details">
-                                        <h5 class="text-uppercase text-theme-colored font-weight-600 m-2">
-                                            {{ $faculty->name }}
-                                        </h5>
-                                        <h6 class="text-gray font-13 font-weight-400 line-bottom-centered mt-0">
-                                            {{ $faculty->designation }}
-                                            <p class="hidden-md"></p>
-                                    </div>
+                        <img height="800px" alt="" src="{{asset('upload/faculty group.jpeg')}}">
+                    </div>
+                    @else
+                        <div class="row mtli-row-clearfix">
+                    @foreach ($data as $faculty)
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-2">
+                                <div class="team-thumb">                                      
+                                    <a href="{{ route('faculty-details', $faculty->id) }}">
+                                        <img height="300px" class="img-fullwidth" alt="" style="border-radius:50%!important"
+                                            src="{{ $url . 'teacher/' . $faculty->image_name }}">
+                                    </a>
+                                    <div class="team-overlay"></div>
+                                    <?php $social_media = DB::table('social')
+                                        ->where('teacher_id', $faculty->id)
+                                        ->get(); ?>
+                                    <ul class="styled-icons theme-icon team-social icon-sm ml-5">
+                                        @foreach ($social_media as $social)
+                                            <li class="pt-4"><a target="_blank" href="{{ $social->link }}"><i
+                                                        class="fab fa-{{ $social->social }}"></i></a></li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                <div class="team-details">
+                                    <h5 class="text-uppercase text-theme-colored font-weight-600 m-2">
+                                        {{ $faculty->name }}
+                                    </h5>
+                                    <h6 class="text-gray font-13 font-weight-400 line-bottom-centered mt-0">
+                                        {{ $faculty->designation }}
+                                        <p class="hidden-md"></p>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
+                        </div>
+                    @endforeach
+                    </div>                    
                     <div class="p-4 "> {{ $data->onEachSide(0)->links() }} </div>
+                    @endif
                 </div>
             </section>
         </section>
