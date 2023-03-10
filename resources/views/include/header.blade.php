@@ -121,6 +121,7 @@ a.red {
                 </div>
             </div>
         </li>
+        <li class="career_btn"><a href="{{ route('club') }}">CLUBs</a></li>
         <li class="career_btn"><a href="{{ route('iqac') }}">IQAC</a></li>
         <li class="career_btn"><a href="{{ route('rti') }}">RTI</a></li>
         <li class="career_btn"><a href="{{ route('career') }}">Careers</a></li>
