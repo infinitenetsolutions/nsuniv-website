@@ -69,8 +69,8 @@ $affiliation_mobile = DB::table('affiliated_tbl')->get();
         @foreach ($affiliation_mobile as $mobile)
             <div class="carousel-item text-center {{ $loop->index == 1 ? 'active' : '' }}">
                 <img class="img-fluid" src="{{ $url . 'affiliated/' . $mobile->image_name }}"
-                    style="width:70%!important; height:150px;">
-                <div class="border p-2 mt-2" style="background-color:#e3b121; height: 85px; border-radius: 20px">
+                    style="width:70%!important; height:180px;">
+                <div class="border p-2 mt-2" style="background-color:#e3b121; height: 52px; border-radius: 20px">
                     <a target="_blank" href="{{ $mobile->virtual_image_name }}" style="font-size: 14px">
                         {{ $mobile->sub_title }}
                     </a>
