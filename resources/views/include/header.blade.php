@@ -182,10 +182,10 @@ a.red {
                     <div class="mega_menu pt-5 hidden-xs">
 
                         <div class="row pl-3 no-gutters scroll-pan ">
-                            <div class="col-md-6 ">
+                            <div class="col-md-12">
 
                                 <div class="row">
-                                    <div class="col-md-6  ">
+                                    <div class="col-md-4">
                                         <div class=" no-gutters menu_col4 ">
                                             <div class="right_mega_menu">
                                                 <?php $abouts = DB::table('pages')
@@ -205,7 +205,7 @@ a.red {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class=" no-gutters menu_col4 ">
                                             <div class="right_mega_menu">
                                                 <ul>
@@ -269,13 +269,48 @@ a.red {
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-4">
+                                        <div class="no-gutters menu_col4 ">
+                                            <div class="right_mega_menu">
+                                                <ul>
+                                                    <?php $affiliations = DB::table('affiliated_tbl')->get(); ?>
+                                                    @foreach ($affiliations as $affiliation)
+                                                        <li> <a class="text-uppercase" target="_blank"
+                                                            href="{{ $affiliation->virtual_image_name }}">
+                                                            {{ $affiliation->sub_title }}
+                                                        </a></li>
+                                                    @endforeach
 
+                                                    <li><a class="text-uppercase" href="{{ route('govbody') }}">
+                                                            The
+                                                            Governing Body</a></li>
+
+                                                    <li class="dropdown"> <a href="#"><b
+                                                                class="color-orange text-uppercase">
+                                                                <?php echo 'NIRF'; ?>
+                                                            </b>
+                                                            <div class="dropdown-content">
+
+                                                                @foreach ($studentpdfs as $studentpdf)
+                                                                    <a class="text-uppercase" target="_blank"
+                                                                        href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
+                                                                        {{ $studentpdf->title }}</a>
+                                                                @endforeach
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
                                 <img src="{{ asset('images/nsu/about.jpeg') }}" alt="">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </li>
