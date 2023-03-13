@@ -119,7 +119,7 @@
                                 class="text-white ">Tour</span>
                         </h2>
                         <div class="double-line-bottom-theme-colored-2"></div>
-                        <div class="effect-wrapper">
+                        <div class="effect-wrapper" style="height:250px">
                             <div class="thumb" style=" background: black; ">
                                 <img class="img-fullwidth"
                                     src="{{asset('images/about/tour.jpeg') }}" alt="project"

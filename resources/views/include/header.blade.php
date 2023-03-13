@@ -272,6 +272,7 @@ a.red {
                                     <div class="col-md-4">
                                         <div class="no-gutters menu_col4 ">
                                             <div class="right_mega_menu">
+                                                {{-- <p>Recognition</p> --}}
                                                 <ul>
                                                     <?php $affiliations = DB::table('affiliated_tbl')->get(); ?>
                                                     @foreach ($affiliations as $affiliation)
@@ -280,26 +281,6 @@ a.red {
                                                             {{ $affiliation->sub_title }}
                                                         </a></li>
                                                     @endforeach
-
-                                                    <li><a class="text-uppercase" href="{{ route('govbody') }}">
-                                                            The
-                                                            Governing Body</a></li>
-
-                                                    <li class="dropdown"> <a href="#"><b
-                                                                class="color-orange text-uppercase">
-                                                                <?php echo 'NIRF'; ?>
-                                                            </b>
-                                                            <div class="dropdown-content">
-
-                                                                @foreach ($studentpdfs as $studentpdf)
-                                                                    <a class="text-uppercase" target="_blank"
-                                                                        href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
-                                                                        {{ $studentpdf->title }}</a>
-                                                                @endforeach
-
-                                                            </div>
-                                                        </a>
-                                                    </li>
 
                                                 </ul>
                                             </div>
