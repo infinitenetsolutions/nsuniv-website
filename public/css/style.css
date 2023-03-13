@@ -8324,3 +8324,11 @@ border-left: #c39e38 3px solid;
   {
     border: 1px solid #000 !important;
   }
+
+   .point li {
+        list-style: inside !important;
+    } 
+
+    .para-tah {
+        font-family: tahoma !important;
+    }

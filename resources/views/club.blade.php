@@ -1,12 +1,4 @@
-<style>
-    .point li {
-        list-style: inside !important;
-    }
 
-    .para-tah {
-        font-family: tahoma !important;
-    }
-</style>
 <x-layout1>
     @slot('body')
         <section class="inner-page">
@@ -42,7 +34,7 @@
                         <p class='para-tah'>These clubs are managed by the students of NSU with the help of a faculty mentor, so you can be an organiser as well as a participant. The clubs will organise competitions, events, and activities and offer excellent networking opportunities with fellow students. They also channelise diverse interests and talents of students by providing them with an avenue to display their talents. The campus comes alive with events such as debates, drama, music, cricket tournaments, photography competitions and quizzes. There are several clubs that students can be a member of, take membership of in order to be part of the cultural landscape of the University. The club activities are scheduled for 5 days in a week(Monday through Friday).</p>
 
                         <h4>Clubs</h4>
-                        <ul class="point">
+                        <ul class="point" style="list-style: inside !important;">
                             <li> <b>Invincibles</b> (For Holistic Developments)</li>
                             <li> <b>Broadway Junkies</b> (The Dance & Dramatics Club)</li>
                             <li> <b>Shutterklips</b> (The Photography Club)</li>

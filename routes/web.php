@@ -20,6 +20,7 @@ use App\Http\Controllers\StructureController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\RTIController;
 use App\Http\Controllers\IQACController;
+use App\Http\Controllers\RotaractController;
 use App\Http\Controllers\CLUBController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\UpgradeCampusController;
@@ -89,4 +90,9 @@ Route::get('conference', [ConferenceController::class, 'index'])->name('conferen
 Route::get('rti', [RTIController::class, 'index'])->name('rti');
 Route::get('iqac',[IQACController::class,'index'])->name('iqac');
 Route::get('club',[CLUBController::class,'index'])->name('club');
+Route::get('club',[CLUBController::class,'index'])->name('club');
+Route::get('club',[CLUBController::class,'index'])->name('club');
+Route::get('Shutterklips',[ShutterklipsController::class,'index'])->name('Shutterklips');
+Route::get('Unbeatables',[UnbeatablesController::class,'index'])->name('Unbeatables');
+Route::get('Rotaract',[RotaractController::class,'index'])->name('Rotaract');
 // Route::get('xplore', [XploreController::class, 'index'])->name('xplore');
